@@ -1,0 +1,17 @@
+div{
+    text-align: center;
+}
+.p1{
+    background-color: fuchsia;
+}
+.p2{
+    background-color:coral;
+    border: 1px solid black;
+}
+.p3{
+    background-color: beige;
+}
+.p4{
+    background-color: beige;
+    border: 2px solid fuchsia;
+}
