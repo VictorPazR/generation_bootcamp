@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/formularios.css" rel="stylesheet" type="text/css">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- placeholder nos ayuda a que se ponga un texto sombreado de que se tiene que ingresar en el inputo -->
+    <!-- value ya pone por defecto un valor al input -->
+    <!-- <forms action="" method="post"></forms> -->
+    <!-- step es para intervalor de aumento -->
+    <form>
+        <input type="text" placeholder="Nombre" id="nombre">
+        <input type="text" placeholder="Apellido">
+        <input type="text" minlength="4" maxlength="10">
+        <input type="number" min="0" max="100" step="5">
+        
+        <input type="date">
+        <input type="month">
+        <input type="week">
+        <input type="time">
+        <input type="password">
+        <input type="file">
+        <input type="range" min="1" max="100">
+        <input type="checkbox" value="hola">
+        <input type="radio" name="n1" value="1">
+        <input type="radio" name="n2" value="2">
+        <input type="email" >
+
+        <select>
+            <option >Uno</option>
+            <option value="1">Dos</option>
+            <option value="2" selected>Tres</option>
+        </select>
+
+        <input type="color" id='color'>
+        <textarea name="" id="" cols="20" rows="10">
+        </textarea>
+        <input type="reset" value="limpiar">
+        <input type="submit" id="btn-informacion"value="Enviar Formulario">
+
+    </form>
+
+    <script>
+        const color= document.querySelector("#color");
+        console.log(color);
+        color.addEventListener("change",function(e){
+            document.body.style.backgroundColor = e.target.value;
+        })
+        
+    </script>
+
+    <h1>Formulario</h1>
+    <form>
+        <section>
+            <div class="nombre">
+                <label class="acomodarLabel" for="nombre">Nombre</label>
+                <input type="text" name="name" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="apellido">
+                <label class="acomodarLabel" for="nombre">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+            </div>
+            <div class="password">
+                <label class="acomodarLabel" for="nombre">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="correo">
+                <label class="acomodarLabel" for="nombre">Correo</label>
+                <input type="email" name="correo" id="correo" placeholder="Correo">
+            </div>
+            <div class="enviar">
+                <input id="btn-enviar" type="submit" value="Enviar">
+            </div>
+        </section>
+    </form>
+
+
+
+</body>
+</html>

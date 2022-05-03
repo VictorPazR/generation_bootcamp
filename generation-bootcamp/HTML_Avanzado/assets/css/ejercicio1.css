@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background-color: #7fffd4;
+}
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+table,tr,td,th{
+    border: 2px solid black;
+    padding: 0.2rem 0.6rem ;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+table tbody tr td{
+    font-size: 1.2rem;
+    width: 200px;
+}
+
+table thead tr th{
+    font-size: 1.4rem;
+}
+
+#caberaRojo{
+    color: red;
+}
+
+#cursiva{
+    font-style: italic;
+}
+
+#letraNegritas{
+    font-weight: bold;
+}
+
+.fondoNaranja{
+    background-color: orange;
+}
+
+.fondoNegro{
+    background-color: black;
+}
+
+.fondoVerde{
+    background-color: greenyellow;
+}
+
+#numeroAmarillo{
+    color: yellow;
+}

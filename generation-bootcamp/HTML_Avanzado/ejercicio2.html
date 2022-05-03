@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/ejercicio2.css" rel="stylesheet" type="text/css">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    <form id="formularioDatos">       
+        <div class="cuadroPrincipal">
+            <section id="seccionDatosComprador">
+                <div class="tituloSeccion">
+                    <h3 class="h3">Datos del Comprador</h3>
+                </div>
+                <div class="campo nombre">
+                    <label class="acomodarLabel" for="nombre">Nombre</label>
+                    <input type="text" class="bordeInputRojo" name="name" id="nombre" placeholder="Escribe tu nombre completo" required>
+                </div>
+                <div class="campo correo">
+                    <label class="acomodarLabel" for="correo">Correo</label>
+                    <input type="email" class="bordeInputRojo" name="correo" id="correo" placeholder="ejemplo@um.es">
+                </div>
+                <div class="campo telefono">
+                    <label class="acomodarLabel" for="telefono">Telefono</label>
+                    <input type="number" class="bordeInputRojo" name="telefono" id="telefono" placeholder="Ej. +1234567890" required>
+                </div>
+                <div class="campo pais">
+                    <label class="acomodarLabel" for="nombre">Pais</label>
+                    <input type="text" class="bordeInputRojo" name="pais" id="pais" placeholder="">
+                </div>
+            </section>
+            
+                
+            <section id="seccionDatosTarjeta">
+                <div class="tituloSeccion">
+                    <h3 class="h3">Datos de la tarjeta de credito o debito</h3>
+                </div>
+                <div class="campo numero">
+                    <label class="acomodarLabel" for="numero">Numero</label>
+                    <input type="text" class="bordeInputRojo" name="numero" id="numero" placeholder="Ej. 1111-2222-3333-4444" required>
+                </div>
+                <div class="campo nombre-tarjeta">
+                    <label class="acomodarLabel" for="nombre-tarjeta">Nombre</label>
+                    <input type="text" class="bordeInputRojo" name="nombre-tarjeta" id="nombre-tarjeta" placeholder="Nombre que figura en la tarjeta" required>
+                </div>
+            </section>
+
+            <section>
+                <div id="puntos">
+                    <input id="btn-puntos" type="submit" value="">
+                </div>
+                <div id="enviar">
+                    <input id="btn-enviar" type="submit" value="Confirmar Pedido">
+                </div>
+            </section>
+        </div>   
+    </form>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

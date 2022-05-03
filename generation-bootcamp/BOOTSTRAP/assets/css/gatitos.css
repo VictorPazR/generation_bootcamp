@@ -1,0 +1,148 @@
+.img-logo{
+    width: 200px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.img-carrusel{
+    height: calc(100vh - 76px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.centrar{
+   display: flex;
+   flex-direction: column; 
+   justify-content: center;
+}
+.card{
+    transform: scale(1.1);
+    margin-left: 1rem;
+    margin-bottom: 1rem; 
+}
+
+
+.img-card{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagenContenedor{
+    width: 100%;
+    background-color: #343a40;
+}
+
+.imagenMovimiento{
+    width: 1%;
+    animation: animacion 10s ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion{
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(200px);
+    }
+}
+
+.card:hover{ 
+    background: #343a40;
+    transform: scale(1.15);
+    color: white;
+}
+
+.btn-warning .transformacion{
+    transform: scale(1.5);
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    position: fixed; 
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+
+.contenedor:target{
+    background: rgba(0, 0, 0, 0.6);
+    visibility: visible;
+    opacity: 1;
+}
+
+.video{
+    width: 70%;
+    height: 70%;
+    padding: 2rem;
+    margin-right: 4rem;
+}
+
+
+
+.verVideo{
+    width: 25vw;
+    height: 5vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.btn-close-popup{
+    background: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-style: none;
+}
+
+.pantalla{
+    z-index: 1;
+    width: 100%;
+    height: calc(100vh - 76px);
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    text-align: center;
+}
+
+.cuadro{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    color: white;
+    padding: 2rem;
+}
+
+@media screen and (max-width:550px){
+    .verVideo{
+        width: 30vw;
+        height: 9vh;
+    }
+    a{
+        width: 30vw;
+        height: 10vh;
+    }
+}
+@media screen and (max-width:1200px){
+    .verVideo{
+        width: 25vw;
+    }
+}
+

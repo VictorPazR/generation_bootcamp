@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    
+}
+
+section{
+    border: 2px solid black;
+    height: 250px;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+section{
+    margin: 0 auto;
+    background-color: rgb(130, 142, 142);
+    width: 50%;
+    border-radius: 20px;
+}
+
+section div input{
+    background-color: rgb(28, 241, 188);
+}
+
+div{
+    margin-bottom: 1.5rem;
+}
+
+section div label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+.acomodarLabel{
+    display: inline-block;
+    width: 6.5rem;
+}
+
+#btn-enviar{
+    border: none;
+    background-color: aquamarine;
+    border-radius: 5px;
+    width: 5rem;
+    height: 2rem;
+}

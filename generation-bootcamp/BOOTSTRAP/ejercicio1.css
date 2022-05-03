@@ -1,0 +1,23 @@
+.container{
+    margin: 5rem auto;
+    color: white;
+}
+
+.lg{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.smb{
+    height: 1rem;
+}
+
+.lgb{
+    height: 1rem;
+}
+
+
+
